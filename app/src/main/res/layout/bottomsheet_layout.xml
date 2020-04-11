@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@+id/bottom_sheet1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@android:color/white"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tap_action_layout"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TAP ON ANY CIRCLE"
+            android:textColor="@color/grey"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginBottom="15dp"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/country"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:textSize="35sp"
+               android:text="COUNTRY"
+               android:textStyle="bold"
+               android:textColor="#000"/>
+       </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/new_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#0D88E9"
+                android:background="@drawable/circleshape"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@android:color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="NEW CASES"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           app:cardBackgroundColor="@android:color/white"
+           android:layout_width="match_parent"
+           android:layout_marginTop="10dp"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:orientation="vertical">
+
+
+
+
+                   <TextView
+                       android:id="@+id/recovered_cases"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:backgroundTint="#4CAF50"
+                       android:background="@drawable/circleshape"
+                       android:gravity="center"
+                       android:text="100"
+                       android:textColor="@android:color/black"
+                       android:textSize="35sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:text="RECOVERED CASES"
+                       android:textColor="@android:color/black"
+                       android:textSize="18sp"
+                       android:textStyle="bold" />
+
+               </LinearLayout>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           app:cardBackgroundColor="@android:color/white"
+           android:layout_width="match_parent"
+           android:layout_marginTop="10dp"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:orientation="vertical">
+
+
+
+
+                   <TextView
+                       android:id="@+id/active_cases"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:backgroundTint="#FF5722"
+                       android:background="@drawable/circleshape"
+                       android:gravity="center"
+                       android:text="100"
+                       android:textColor="@android:color/black"
+                       android:textSize="35sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:text="ACTIVE CASES"
+                       android:textColor="@android:color/black"
+                       android:textSize="18sp"
+                       android:textStyle="bold" />
+
+               </LinearLayout>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+       app:cardBackgroundColor="@android:color/white"
+       android:layout_width="match_parent"
+       android:layout_marginTop="10dp"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_gravity="center"
+               android:orientation="vertical">
+
+
+
+
+               <TextView
+                   android:id="@+id/deaths"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@drawable/circleshape"
+                   android:backgroundTint="#A20000"
+                   android:gravity="center"
+                   android:text="100"
+                   android:textColor="@android:color/black"
+                   android:textSize="35sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:text="DEATHS"
+                   android:textColor="@android:color/black"
+                   android:textSize="18sp"
+                   android:textStyle="bold" />
+
+           </LinearLayout>
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           app:cardBackgroundColor="@android:color/white"
+           android:layout_width="match_parent"
+           android:layout_marginTop="10dp"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:orientation="vertical">
+
+
+
+
+                   <TextView
+                       android:id="@+id/total_cases"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:background="@drawable/circleshape"
+                       android:backgroundTint="#AD0FC9"
+                       android:gravity="center"
+                       android:text="100"
+                       android:textColor="@android:color/black"
+                       android:textSize="35dp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:text="TOTAL CASES"
+                       android:textColor="@android:color/black"
+                       android:textSize="18sp"
+                       android:textStyle="bold" />
+
+               </LinearLayout>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+
+
+
+   </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
